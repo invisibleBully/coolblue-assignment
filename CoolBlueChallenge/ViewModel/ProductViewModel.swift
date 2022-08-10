@@ -17,15 +17,14 @@ class ProductViewModel: ObservableObject {
     var searchCancellable: AnyCancellable? = nil
     var pageCount = 1
     var oldSearchQuery = ""
-    let baseUrl = "https://bdk0sta2n0.execute-api.eu-west-1.amazonaws.com/mobile-assignment"
-    
+    let baseUrl = "https://bdk0sta2n0.execute-api.eu-west-1.amazonaws.com/mobile-assignment/"
     
     init(){
         searchCancellable = $searchQuery
             .removeDuplicates()
             .debounce(for: 0.5, scheduler: RunLoop.main)
             .sink(receiveValue: { str in
-                if str == "" {
+                if str == "" || str.isEmpty {
                     self.fetchedProducts = nil
                 }else{
                     self.fetchProducts()
@@ -40,7 +39,7 @@ class ProductViewModel: ObservableObject {
             oldSearchQuery = searchQuery
             self.fetchedProducts = nil
         }
-        let urlString = "\(baseUrl)/search?query=\(searchQuery)&page=\(currentPage)"
+        let urlString = "\(baseUrl)search?query=\(searchQuery)&page=\(currentPage)"
         let session  = URLSession(configuration: .default)
         
         guard let url = URL(string: urlString) else { return }
@@ -73,6 +72,21 @@ class ProductViewModel: ObservableObject {
             }
         }.resume()
         
+    }
+    
+    
+    
+    /// this function adds additional next set of data after first set of data is loaded into view
+    /// every other page is loaded
+    /// - Parameter item: last product item
+    func loadMoreContent(currentItem item: Product){
+        if let fetchedProducts = fetchedProducts {
+            let thresholdIndex = fetchedProducts.index(fetchedProducts.endIndex, offsetBy: -1)
+            if fetchedProducts[thresholdIndex].id == item.id, (currentPage + 1) <= pageCount {
+                currentPage += 1
+                fetchProducts()
+            }
+        }
     }
     
 }
