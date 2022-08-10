@@ -37,7 +37,11 @@ struct ProductsView: View {
                             .padding(.top, 20)
                     }else{
                         ForEach(products){ product in
-                            ProductRowView(product: product)
+                            ProductRowView(product: product).onAppear(perform: {
+                                if productData.searchQuery != "" {
+                                    productData.loadMoreContent(currentItem: product)
+                                }
+                            })
                         }
                     }
                 }else{
