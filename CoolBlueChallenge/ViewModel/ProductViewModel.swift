@@ -1,6 +1,6 @@
 //
 //  ProductViewModel.swift
-//  CoolBlueAssignment
+//  CoolBlueChallenge
 //
 //  Created by Jude on 10/08/2022.
 //
