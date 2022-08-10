@@ -17,6 +17,7 @@
 		2CA2B73128A3CC3100ED9598 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2CA2B73028A3CC3100ED9598 /* SDWebImageSwiftUI */; };
 		2CA2B73928A43C4D00ED9598 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B73828A43C4D00ED9598 /* Double+Extension.swift */; };
 		2CA2B73B28A43CA800ED9598 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B73A28A43CA800ED9598 /* Product.swift */; };
+		2CA2B74328A4415B00ED9598 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B74228A4415B00ED9598 /* ProductViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2CA2B72228A3C6F800ED9598 /* CoolBlueChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolBlueChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2CA2B73828A43C4D00ED9598 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		2CA2B73A28A43CA800ED9598 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		2CA2B74228A4415B00ED9598 /* ProductViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		2CA2B73328A43B1100ED9598 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2CA2B74228A4415B00ED9598 /* ProductViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -154,7 +157,8 @@
 		2CA2B73428A43B1A00ED9598 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2CA2B70728A3C6F600ED9598 /* ContentView.swift */,
+				2CA2B73D28A43FE400ED9598 /* Product */,
+				2CA2B73C28A43FD900ED9598 /* Application */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +185,21 @@
 				2CA2B73828A43C4D00ED9598 /* Double+Extension.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		2CA2B73C28A43FD900ED9598 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2CA2B70728A3C6F600ED9598 /* ContentView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2CA2B73D28A43FE400ED9598 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA2B74328A4415B00ED9598 /* ProductViewModel.swift in Sources */,
 				2CA2B70828A3C6F600ED9598 /* ContentView.swift in Sources */,
 				2CA2B73B28A43CA800ED9598 /* Product.swift in Sources */,
 				2CA2B70628A3C6F600ED9598 /* CoolBlueChallengeApp.swift in Sources */,

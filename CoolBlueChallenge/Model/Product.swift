@@ -9,7 +9,6 @@ import Foundation
 
 
 struct ProductResponse : Codable {
-    
     let products : [Product]?
     let currentPage : Int?
     let pageSize : Int?
@@ -26,10 +25,7 @@ struct ProductResponse : Codable {
     
 }
 
-
-
 struct PromoIcon : Codable {
-    
     let text : String?
     let type : String?
     
@@ -39,8 +35,6 @@ struct PromoIcon : Codable {
     }
     
 }
-
-
 
 struct ReviewSummary : Codable {
     let reviewAverage : Double?
@@ -53,10 +47,6 @@ struct ReviewSummary : Codable {
     
 }
 
-
-
-
-
 struct ReviewInformation : Codable {
     let reviews : [String]?
     let reviewSummary : ReviewSummary?
@@ -67,12 +57,7 @@ struct ReviewInformation : Codable {
     }
 }
 
-
-
-
-
 struct Product: Identifiable, Codable {
-    
     let id : Int
     let productName : String?
     let reviewInformation : ReviewInformation?
@@ -83,8 +68,6 @@ struct Product: Identifiable, Codable {
     let coolbluesChoiceInformationTitle : String?
     let promoIcon : PromoIcon?
     let nextDayDelivery : Bool?
-    
-    
     
     enum CodingKeys: String, CodingKey {
         case id = "productId"
@@ -98,8 +81,6 @@ struct Product: Identifiable, Codable {
         case promoIcon = "promoIcon"
         case nextDayDelivery = "nextDayDelivery"
     }
-    
-    
     
     static func formatAmount(_ price: Double) -> String?{
         let numberFormatter = NumberFormatter()
