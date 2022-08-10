@@ -14,6 +14,7 @@
 		2CA2B71728A3C6F800ED9598 /* CoolBlueChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B71628A3C6F800ED9598 /* CoolBlueChallengeTests.swift */; };
 		2CA2B72128A3C6F800ED9598 /* CoolBlueChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B72028A3C6F800ED9598 /* CoolBlueChallengeUITests.swift */; };
 		2CA2B72328A3C6F800ED9598 /* CoolBlueChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B72228A3C6F800ED9598 /* CoolBlueChallengeUITestsLaunchTests.swift */; };
+		2CA2B73128A3CC3100ED9598 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2CA2B73028A3CC3100ED9598 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CA2B73128A3CC3100ED9598 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = CoolBlueChallenge;
+			packageProductDependencies = (
+				2CA2B73028A3CC3100ED9598 /* SDWebImageSwiftUI */,
+			);
 			productName = CoolBlueChallenge;
 			productReference = 2CA2B70228A3C6F600ED9598 /* CoolBlueChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 2CA2B6F928A3C6F600ED9598;
+			packageReferences = (
+				2CA2B72F28A3CC3100ED9598 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 2CA2B70328A3C6F600ED9598 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CA2B72F28A3CC3100ED9598 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CA2B73028A3CC3100ED9598 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CA2B72F28A3CC3100ED9598 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2CA2B6FA28A3C6F600ED9598 /* Project object */;
 }
