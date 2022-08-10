@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  CoolBlueChallenge
 //
-//  Created by Nii on 10/08/2022.
+//  Created by Jude on 10/08/2022.
 //
 
 import SwiftUI

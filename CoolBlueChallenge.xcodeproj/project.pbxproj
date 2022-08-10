@@ -15,6 +15,8 @@
 		2CA2B72128A3C6F800ED9598 /* CoolBlueChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B72028A3C6F800ED9598 /* CoolBlueChallengeUITests.swift */; };
 		2CA2B72328A3C6F800ED9598 /* CoolBlueChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B72228A3C6F800ED9598 /* CoolBlueChallengeUITestsLaunchTests.swift */; };
 		2CA2B73128A3CC3100ED9598 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2CA2B73028A3CC3100ED9598 /* SDWebImageSwiftUI */; };
+		2CA2B73928A43C4D00ED9598 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B73828A43C4D00ED9598 /* Double+Extension.swift */; };
+		2CA2B73B28A43CA800ED9598 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B73A28A43CA800ED9598 /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		2CA2B71C28A3C6F800ED9598 /* CoolBlueChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolBlueChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CA2B72028A3C6F800ED9598 /* CoolBlueChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolBlueChallengeUITests.swift; sourceTree = "<group>"; };
 		2CA2B72228A3C6F800ED9598 /* CoolBlueChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolBlueChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2CA2B73828A43C4D00ED9598 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		2CA2B73A28A43CA800ED9598 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +100,12 @@
 		2CA2B70428A3C6F600ED9598 /* CoolBlueChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				2CA2B70528A3C6F600ED9598 /* CoolBlueChallengeApp.swift */,
-				2CA2B70728A3C6F600ED9598 /* ContentView.swift */,
-				2CA2B70928A3C6F700ED9598 /* Assets.xcassets */,
+				2CA2B73728A43C3E00ED9598 /* Helper */,
+				2CA2B73628A43B9600ED9598 /* Application */,
+				2CA2B73528A43B2400ED9598 /* Resource */,
+				2CA2B73428A43B1A00ED9598 /* View */,
+				2CA2B73328A43B1100ED9598 /* ViewModel */,
+				2CA2B73228A43B0B00ED9598 /* Model */,
 				2CA2B70B28A3C6F700ED9598 /* Preview Content */,
 			);
 			path = CoolBlueChallenge;
@@ -127,6 +134,53 @@
 				2CA2B72228A3C6F800ED9598 /* CoolBlueChallengeUITestsLaunchTests.swift */,
 			);
 			path = CoolBlueChallengeUITests;
+			sourceTree = "<group>";
+		};
+		2CA2B73228A43B0B00ED9598 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CA2B73A28A43CA800ED9598 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2CA2B73328A43B1100ED9598 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2CA2B73428A43B1A00ED9598 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CA2B70728A3C6F600ED9598 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2CA2B73528A43B2400ED9598 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				2CA2B70928A3C6F700ED9598 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		2CA2B73628A43B9600ED9598 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2CA2B70528A3C6F600ED9598 /* CoolBlueChallengeApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2CA2B73728A43C3E00ED9598 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2CA2B73828A43C4D00ED9598 /* Double+Extension.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CA2B70828A3C6F600ED9598 /* ContentView.swift in Sources */,
+				2CA2B73B28A43CA800ED9598 /* Product.swift in Sources */,
 				2CA2B70628A3C6F600ED9598 /* CoolBlueChallengeApp.swift in Sources */,
+				2CA2B73928A43C4D00ED9598 /* Double+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
