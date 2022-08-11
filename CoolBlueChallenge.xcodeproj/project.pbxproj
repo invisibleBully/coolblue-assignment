@@ -20,6 +20,8 @@
 		2CA2B74328A4415B00ED9598 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA2B74228A4415B00ED9598 /* ProductViewModel.swift */; };
 		2CBBC5D028A454E9005E71EB /* ProductRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBC5CE28A454E8005E71EB /* ProductRowView.swift */; };
 		2CBBC5D128A454E9005E71EB /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBC5CF28A454E9005E71EB /* ProductsView.swift */; };
+		2CBBC5D428A476A9005E71EB /* products.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CBBC5D328A476A9005E71EB /* products.json */; };
+		2CBBC5D628A47A63005E71EB /* XCTestCase+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CBBC5D528A47A63005E71EB /* XCTestCase+JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		2CA2B74228A4415B00ED9598 /* ProductViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		2CBBC5CE28A454E8005E71EB /* ProductRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductRowView.swift; sourceTree = "<group>"; };
 		2CBBC5CF28A454E9005E71EB /* ProductsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		2CBBC5D328A476A9005E71EB /* products.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = products.json; sourceTree = "<group>"; };
+		2CBBC5D528A47A63005E71EB /* XCTestCase+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+JSON.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				2CA2B71628A3C6F800ED9598 /* CoolBlueChallengeTests.swift */,
+				2CBBC5D228A47679005E71EB /* Mock */,
 			);
 			path = CoolBlueChallengeTests;
 			sourceTree = "<group>";
@@ -206,6 +211,15 @@
 				2CBBC5CF28A454E9005E71EB /* ProductsView.swift */,
 			);
 			path = Product;
+			sourceTree = "<group>";
+		};
+		2CBBC5D228A47679005E71EB /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				2CBBC5D328A476A9005E71EB /* products.json */,
+				2CBBC5D528A47A63005E71EB /* XCTestCase+JSON.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBBC5D428A476A9005E71EB /* products.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBBC5D628A47A63005E71EB /* XCTestCase+JSON.swift in Sources */,
 				2CA2B71728A3C6F800ED9598 /* CoolBlueChallengeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +533,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -546,6 +563,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
