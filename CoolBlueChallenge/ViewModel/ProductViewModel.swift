@@ -77,7 +77,7 @@ class ProductViewModel: ObservableObject {
     
     
     /// this function adds additional next set of data after first set of data is loaded into view
-    /// every other page is loaded
+    /// every other page is loaded and appended 
     /// - Parameter item: last product item
     func loadMoreContent(currentItem item: Product){
         if let fetchedProducts = fetchedProducts {

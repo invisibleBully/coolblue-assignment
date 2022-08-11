@@ -32,7 +32,7 @@ struct ProductRowView: View {
                     Image(systemName: "star.fill")
                         .foregroundColor(Color.orange)
                         .font(.system(size: 12))
-                    Text(product?.reviewInformation?.reviewSummary?.reviewAverage?.removeTrailing() ?? "0.00")
+                    Text(product?.reviewInformation?.reviewSummary?.reviewAverage?.formatAverageRating() ?? "0.00")
                         .font(.system(size: 14, weight: .semibold))
                 }
                 
